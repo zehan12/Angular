@@ -1,0 +1,22 @@
+<section class="mt-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card shadow-lg">
+                    <div class="card-header" [class.bg-dark]="darkTheme" [class.text-white]="darkTheme">
+                        <p class="h4">Theme Selector</p>
+                        <div class="form-check form-switch">
+                            <input name="darkTheme" [(ngModel)]="darkTheme" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Dark Theme</label>
+                        </div>
+                    </div>
+                    <div class="card-body" [class.bg-dark]="darkTheme" [class.text-white]="darkTheme">
+                        <img src="assets/img/Card-3.jpg" alt="" class="img-fluid">
+                        <p class="h3 mt-2">Paris</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi ducimus consequatur fugit delectus eum laborum nulla exercitationem, itaque dolorem quis perspiciatis aperiam doloremque molestias eveniet aspernatur eos assumenda voluptatibus adipisci?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

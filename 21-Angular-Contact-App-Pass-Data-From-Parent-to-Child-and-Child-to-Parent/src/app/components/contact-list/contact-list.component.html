@@ -1,0 +1,21 @@
+<!-- <pre>{{contacts | json}}</pre> -->
+<table class="table table-striped table-hover text-left">
+    <thead class="bg-dark text-white">
+        <tr>
+            <th>SNO</th>
+            <th>NAME</th>
+            <th>EMAIL</th>
+            <th>PHONE</th>
+            <th>LOCATION</th>
+        </tr>
+    </thead>
+        <tbody>
+            <tr *ngFor="let contact of contacts" (click)="selectContact(contact)">
+                <td>{{contact.login.uuid.substr(contact.login.uuid.length-5)}}</td>
+                <td>{{contact.name.title}} {{contact.name.last}}</td>
+                <td>{{contact.email}}</td>
+                <td>{{contact.phone}}</td>
+                <td>{{contact.location.city}}</td>
+            </tr>
+        </tbody>
+</table>
